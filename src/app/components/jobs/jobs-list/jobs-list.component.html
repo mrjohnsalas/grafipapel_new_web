@@ -1,0 +1,84 @@
+<!-- Promo Block -->
+<section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+    <!-- Parallax Image -->
+    <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-white-opacity-0_8--after" style="height: 120%; background: url(/assets/img/employees/TRABAJADORES_GP.png); transform: translate3d(0px, -40.7568px, 0px);"></div>
+    <!-- End Parallax Image -->
+
+    <div class="container u-bg-overlay__inner text-center g-py-100 g-py-160--md">
+        <h2 class="h1 g-color-gray-dark-v1 text-uppercase g-font-weight-600 g-width-60x--md mx-auto g-mb-30">¡Buscamos talentos como tú!</h2>
+    </div>
+</section>
+<!-- Promo Block -->
+
+<!-- Recent Jobs -->
+<section class="g-py-100">
+    <div class="container">
+        <header class="text-center g-width-60x--md mx-auto g-mb-50">
+            <h2 class="h1 g-color-gray-dark-v1 g-font-weight-300">Ofertas de trabajo vigentes</h2>
+            <p class="lead">Te invitamos a ser parte de la gran familia Grafipapel, revisa nuestras ofertas de trabajo vigentes y forma parte de nuestros diferentes procesos de selección.</p>
+        </header>
+
+        <div class="row g-mb-30" *ngIf="objs">
+            <div class="col-lg-4 g-mb-30 g-mb-0--lg">
+                <!-- Recent Jobs -->
+                <article class="u-shadow-v11 rounded g-pa-25">
+                    <h2 class="h4 g-mb-15">
+                        <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" [routerLink]="['detail', 1]">{{ objs[0].name }}</a>
+                    </h2>
+
+                    <ul class="list-inline d-flex justify-content-between g-mb-15">
+                        <li class="list-inline-item g-mr-20">
+                            <img class="g-width-25 g-height-16 g-mr-5" src="/assets/img/logo/gp_logo_25x17.png" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" [routerLink]="">{{ objs[0].company }}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="js-rating d-block g-color-primary" data-rating="5"></span>
+                        </li>
+                    </ul>
+
+                    <p class="g-mb-15">{{ objs[0].description }}</p>
+
+                    <ul class="list-unstyled">
+                        <li class="media g-mb-10">
+                            <span class="d-block g-color-gray-dark-v5 g-width-110">
+                                <i class="icon-clock g-pos-rel g-top-1 g-mr-5"></i> Horario:
+                            </span>
+                            <span class="media-body">{{ objs[0].typeOfSchedule }}</span>
+                        </li>
+                        <li class="media g-mb-10">
+                            <span class="d-block g-color-gray-dark-v5 g-width-110">
+                                <i class="icon-calendar g-pos-rel g-top-1 g-mr-5"></i> Publicación:
+                            </span>
+                            <span class="media-body">{{ objs[0].publicationDate }}</span>
+                        </li>
+                        <li class="media g-mb-10">
+                            <span class="d-block g-color-gray-dark-v5 g-width-110">
+                                <i class="icon-user g-pos-rel g-top-1 g-mr-5"></i> Habilidades:
+                            </span>
+                            <span class="media-body">{{ objs[0].skills.toString() }} </span>
+                        </li>
+                        <li class="media">
+                            <span class="d-block g-color-gray-dark-v5 g-width-110">
+                                <i class="icon-location-pin g-pos-rel g-top-1 g-mr-5"></i> Ubicación:
+                            </span>
+                            <span class="media-body">{{ objs[0].location }}</span>
+                        </li>
+                    </ul>
+
+                    <hr class="g-brd-gray-light-v4">
+
+                    <ul class="list-inline d-flex justify-content-between mb-0">
+                        <li class="list-inline-item">
+                            <a class="u-tags-v1 g-font-size-12 g-color-main g-brd-around g-brd-gray-light-v3 g-bg-gray-dark-v2--hover g-brd-gray-dark-v2--hover g-color-white--hover rounded g-py-3 g-px-8" [routerLink]="">{{ objs[0].statusId == 1 ? 'Activo' : 'Cerrado' }}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a [routerLink]="['detail', 1]">Ver detalles</a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- End Recent Jobs -->
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Recent Jobs -->

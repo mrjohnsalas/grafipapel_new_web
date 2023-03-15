@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "1",
+    "name": "Sobre Manila Pago",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "10,8 x 18 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/01-SOBRES-MANILA-SOBRE-MANILA-PAGO-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/01-SOBRES-MANILA-SOBRE-MANILA-PAGO-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "100 unid.",
+        "productsPerBox": "1 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "2",
+    "name": "Sobre Manila 1/2 Oficio",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "19 x 25,5 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/02-SOBRES-MANILA-SOBRE-MANILA-MEDIO-OFICIO-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/02-SOBRES-MANILA-SOBRE-MANILA-MEDIO-OFICIO-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "3",
+    "name": "Sobre Manila Carta",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "23 x 30,5 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/03-SOBRES-MANILA-SOBRE-MANILA-CARTA-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/03-SOBRES-MANILA-SOBRE-MANILA-CARTA-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "4",
+    "name": "Sobre Manila A4",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "24 x 34 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/04-SOBRES-MANILA-SOBRE-MANILA-A4-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/04-SOBRES-MANILA-SOBRE-MANILA-A4-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "5",
+    "name": "Sobre Manila Oficio",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "25 x 38 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/05-SOBRES-MANILA-SOBRE-MANILA-OFICIO-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/05-SOBRES-MANILA-SOBRE-MANILA-OFICIO-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "6",
+    "name": "Sobre Manila Extra Oficio",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "30 x 38 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/06-SOBRES-MANILA-SOBRE-MANILA-EXTRA-OFICIO-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/06-SOBRES-MANILA-SOBRE-MANILA-EXTRA-OFICIO-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "7",
+    "name": "Sobre Manila Radiográfico",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "35.5 x 45.5 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/07-SOBRES-MANILA-SOBRE-MANILA-RADIOGRAFICO-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/07-SOBRES-MANILA-SOBRE-MANILA-RADIOGRAFICO-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "8",
+    "name": "Sobre Manila Pago Cartera",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres manila son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "10.8 x 18 cm",
+    "gramaje": "75GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/08-SOBRES-MANILA-SOBRE-MANILA-PAGO-CARTERA-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/08-SOBRES-MANILA-SOBRE-MANILA-PAGO-CARTERA-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "9",
+    "name": "Sobre Bond Pago",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "10.8 x 18 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/09-SOBRES-BOND-SOBRE-BOND-PAGO-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/09-SOBRES-BOND-SOBRE-BOND-PAGO-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "100 unid.",
+        "productsPerBox": "1 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "10",
+    "name": "Sobre Bond 1/2 Oficio",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "19 x 25,5 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/10-SOBRES-BOND-SOBRE-BOND-MEDIO-OFICIO-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/10-SOBRES-BOND-SOBRE-BOND-MEDIO-OFICIO-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "11",
+    "name": "Sobre Bond Carta",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "23 x 30,5 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/11-SOBRES-BOND-SOBRE-BOND-CARTA-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/11-SOBRES-BOND-SOBRE-BOND-CARTA-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "12",
+    "name": "Sobre Bond A4",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "24 x 34 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/12-SOBRES-BOND-SOBRE-BOND-A4-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/12-SOBRES-BOND-SOBRE-BOND-A4-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "13",
+    "name": "Sobre Bond Oficio",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "25 x 38 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/13-SOBRES-BOND-SOBRE-BOND-OFICIO-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/13-SOBRES-BOND-SOBRE-BOND-OFICIO-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "14",
+    "name": "Sobre Bond Extra Oficio",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "30 x 38 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/14-SOBRES-BOND-SOBRE-BOND-EXTRA-OFICIO-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/14-SOBRES-BOND-SOBRE-BOND-EXTRA-OFICIO-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "15",
+    "name": "Sobre Bond Radiográfico",
+    "description": "",
+    "extendDescription": "Protege tus documentos, Los sobres bond son ideales para diversos usos de la oficina y particulares. Contamos con una gran variedad de tamaños. Nuestros sobres contienen: Medidas exactas, Goma de seguridad, Gramaje uniforme y Bolsa biodegradable.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "35,5 x 45,5 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/15-SOBRES-BOND-SOBRE-BOND-RADIOGRAFICO-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/15-SOBRES-BOND-SOBRE-BOND-RADIOGRAFICO-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "16",
+    "name": "MIX OFICINA Sobre & Folder",
+    "description": "",
+    "extendDescription": "",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2001",
+    "grupo": "SOBRES MANILA",
+    "medida": "A4",
+    "gramaje": "90GR",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/16-SOBRES-BOND-SOBRE-Y-FOLDER-MIX-OFICINA_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/16-SOBRES-BOND-SOBRE-Y-FOLDER-MIX-OFICINA_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "20 unid.",
+        "productsPerBox": "10 Folders / 10 Sobres"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "17",
+    "name": "Sobre Ecologico A4 KRAFT",
+    "description": "",
+    "extendDescription": "Los sobres GRAFIPAPEL son utilizados para empacar correspondencia empresarial o personal, son fabricados en papel kraft 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "A4",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/17-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-A4-KRAFT-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/17-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-A4-KRAFT-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "18",
+    "name": "Sobre Ecologico Oficio KRAFT",
+    "description": "",
+    "extendDescription": "Los sobres GRAFIPAPEL son utilizados para empacar correspondencia empresarial o personal, son fabricados en papel kraft 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "25 x 38 cm",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/18-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-OFICIO-KRAFT-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/18-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-OFICIO-KRAFT-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "19",
+    "name": "Sobre Ecologico 1/2 Oficio KRAFT",
+    "description": "",
+    "extendDescription": "Los sobres GRAFIPAPEL son utilizados para empacar correspondencia empresarial o personal, son fabricados en papel kraft 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "19 x 25,5 cm",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/19-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-MEDIO-OFICIO-KRAFT-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/19-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-MEDIO-OFICIO-KRAFT-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "20",
+    "name": "Sobre Ecologico Pago KRAFT",
+    "description": "",
+    "extendDescription": "Los sobres GRAFIPAPEL son utilizados para empacar correspondencia empresarial o personal, son fabricados en papel kraft 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "10,8 x 18 cm",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/20-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-PAGO-KRAFT-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/20-SOBRES-ECOLOGICOS-SOBRE-ECOLOGICO-PAGO-KRAFT-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "100 unid.",
+        "productsPerBox": "1 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "21",
+    "name": "Consola Bond 56GR y 75GR 9 7/8 x 11 x 1",
+    "description": "",
+    "extendDescription": "Las formas Continuas GRAFIPAPEL son ideales para imprimir facturas, planillas, reportes y documentos de formato continuo. Nuestro papel continuo, es 100% blanco, evita los atascos en la impresión, gracias a los desgloses y perforaciones perfectas.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "22",
+    "clase": "FORMATOS CONTINUOS",
+    "grupoId": "2201",
+    "grupo": "CONSOLAS",
+    "medida": "9 7/8 x 11 x 1",
+    "gramaje": "56GR 75GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/24-FORMATOS-CONTINUOS-CONSOLA-BOND-9-7-8X11X1_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/24-FORMATOS-CONTINUOS-CONSOLA-BOND-9-7-8X11X1_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "1 millar",
+        "productsPerBox": "4 millares"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "22",
+    "name": "Consola Bond 56GR y 75GR 9 7/8 x 11 x 1 C/Corte 5 1/2",
+    "description": "",
+    "extendDescription": "Las formas Continuas GRAFIPAPEL son ideales para imprimir facturas, planillas, reportes y documentos de formato continuo. Nuestro papel continuo, es 100% blanco, evita los atascos en la impresión, gracias a los desgloses y perforaciones perfectas.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "22",
+    "clase": "FORMATOS CONTINUOS",
+    "grupoId": "2201",
+    "grupo": "CONSOLAS",
+    "medida": "9 7/8 x 11 x 1 C/Corte 5 1/2",
+    "gramaje": "56GR 75GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/25-FORMATOS-CONTINUOS-CONSOLA-BOND-9-7-8X11X1-C-CORTE-5-1-2_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/25-FORMATOS-CONTINUOS-CONSOLA-BOND-9-7-8X11X1-C-CORTE-5-1-2_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "1 millar",
+        "productsPerBox": "4 millares"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "23",
+    "name": "Consola Bond 56GR y 75GR 9 7/8 x 11 x 2",
+    "description": "",
+    "extendDescription": "Las formas Continuas GRAFIPAPEL son ideales para imprimir facturas, planillas, reportes y documentos de formato continuo. Nuestro papel continuo, es 100% blanco, evita los atascos en la impresión, gracias a los desgloses y perforaciones perfectas.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "22",
+    "clase": "FORMATOS CONTINUOS",
+    "grupoId": "2201",
+    "grupo": "CONSOLAS",
+    "medida": "9 7/8 x 11 x 2",
+    "gramaje": "56GR 75GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/26-FORMATOS-CONTINUOS-CONSOLA-QUIMICO-9-7-8X11X2_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/26-FORMATOS-CONTINUOS-CONSOLA-QUIMICO-9-7-8X11X2_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "1/2 millar",
+        "productsPerBox": "2 millares"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "24",
+    "name": "Folder Manila A4",
+    "description": "",
+    "extendDescription": "Organiza tus documentos, nuestros folders contienen: Medidas exactas, Gramaje uniforme y Doble perforación (lateral y superior)",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "21",
+    "clase": "FOLDERS",
+    "grupoId": "2101",
+    "grupo": "FOLDERS MANILA",
+    "medida": "A4",
+    "gramaje": "",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/27-FOLDERS-MANILA-FOLDER-MANILA-A4_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/27-FOLDERS-MANILA-FOLDER-MANILA-A4_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "25 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "25",
+    "name": "Folder Manila Oficio",
+    "description": "",
+    "extendDescription": "Organiza tus documentos, nuestros folders contienen: Medidas exactas, Gramaje uniforme y Doble perforación (lateral y superior)",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "21",
+    "clase": "FOLDERS",
+    "grupoId": "2101",
+    "grupo": "FOLDERS MANILA",
+    "medida": "23,5 x 36 cm",
+    "gramaje": "",
+    "material": "MANILA",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/28-FOLDERS-MANILA-FOLDER-OFICIO_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/28-FOLDERS-MANILA-FOLDER-OFICIO_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "25 unid.",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "26",
+    "name": "Folder Hot Colors",
+    "description": "",
+    "extendDescription": "Realza tus presentaciones, Los folders Hot Colors garantizan el realce de tus documentos impresos, nuestros folders contiene: Medidas exactas, Gramaje uniforme, Color uniforme, Doble perforación (lateral y superior) y no es tóxico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "21",
+    "clase": "FOLDERS",
+    "grupoId": "2103",
+    "grupo": "FOLDERS HOT COLORS",
+    "medida": "A4",
+    "gramaje": "",
+    "material": "",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/29-FOLDERS-A4-COLORES-HOT-COLOR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/29-FOLDERS-A4-COLORES-HOT-COLOR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "25 unid. Surtido",
+        "productsPerBox": "1/2 millar"
+      },
+      {
+        "productsPerPackage": "10 unid. Surtido",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "27",
+    "name": "Folder Neón Surtido",
+    "description": "",
+    "extendDescription": "Realza tus presentaciones, Los folders Neon hacen la diferencia en tus presentaciones, nuestros folders contiene: Medidas exactas, Gramaje uniforme, Color uniforme, Doble perforación (lateral y superior), No es tóxico y tenemos colores surtidos.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "21",
+    "clase": "FOLDERS",
+    "grupoId": "2103",
+    "grupo": "FOLDERS HOT COLORS",
+    "medida": "A4",
+    "gramaje": "",
+    "material": "",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/30-FOLDERS-A4-COLOR-NEON_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/30-FOLDERS-A4-COLOR-NEON_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "20 unid. Surtido",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "28",
+    "name": "Folder Neón Turquesa",
+    "description": "",
+    "extendDescription": "Realza tus presentaciones, Los folders Neon hacen la diferencia en tus presentaciones, nuestros folders contiene: Medidas exactas, Gramaje uniforme, Color uniforme, Doble perforación (lateral y superior), No es tóxico y tenemos colores surtidos.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "21",
+    "clase": "FOLDERS",
+    "grupoId": "2103",
+    "grupo": "FOLDERS HOT COLORS",
+    "medida": "A4",
+    "gramaje": "",
+    "material": "",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/FOLDERS-NEON-TURQUEZA-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/FOLDERS-NEON-TURQUEZA-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "20 unid. Por color",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "29",
+    "name": "Sobres Blancos (Oficio, Carta, Esquela, Parte Matrimonio)",
+    "description": "",
+    "extendDescription": "",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2003",
+    "grupo": "SOBRES BOND",
+    "medida": "",
+    "gramaje": "",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/23-SOBRES-BOND-MATRIMONIO-OFICIO-CARTA-CD-VENTANA-VISITA_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/23-SOBRES-BOND-MATRIMONIO-OFICIO-CARTA-CD-VENTANA-VISITA_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "30",
+    "name": "Sobre Carta Hot Colors",
+    "description": "",
+    "extendDescription": "",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2007",
+    "grupo": "SOBRES HOT COLORS",
+    "medida": "11,5 x 16,2 cm",
+    "gramaje": "",
+    "material": "",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/21-SOBRES-CARTA-COLORES-HOT-COLOR-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/21-SOBRES-CARTA-COLORES-HOT-COLOR-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "25 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "31",
+    "name": "Sobre Carta Turquesa y Rosado",
+    "description": "",
+    "extendDescription": "",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2007",
+    "grupo": "SOBRES HOT COLORS",
+    "medida": "11,5 x 16,2 cm",
+    "gramaje": "",
+    "material": "",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/22-SOBRES-CARTA-COLOR-NEON-75GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/22-SOBRES-CARTA-COLOR-NEON-75GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "25 unid.",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  },
+  {
+    "id": "32",
+    "name": "Plotter - Rollo de papel",
+    "description": "",
+    "extendDescription": "Los rollos de papel bond para plotters son especiales para impresión de planos de arquitectura, diseño, ingeniería, industrial textil , etc.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "24",
+    "clase": "CONTOMETROS",
+    "grupoId": "2402",
+    "grupo": "PLOTTERS",
+    "medida": "9,8 x 9,8 x 61 cm",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/33-PLOTTER-ROLLO-PAPEL-BOND-PLOTTER-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/33-PLOTTER-ROLLO-PAPEL-BOND-PLOTTER-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "1 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "33",
+    "name": "Plotter - Rollo de papel Caja 2 unid.",
+    "description": "",
+    "extendDescription": "Los rollos de papel bond para plotters son especiales para impresión de planos de arquitectura, diseño, ingeniería, industrial textil , etc.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "24",
+    "clase": "CONTOMETROS",
+    "grupoId": "2402",
+    "grupo": "PLOTTERS",
+    "medida": "24\" x 45 mt",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/31-PLOTTER-EN-CAJA-ROLLO-PAPEL-BOND-PLOTTER-24X45-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/31-PLOTTER-EN-CAJA-ROLLO-PAPEL-BOND-PLOTTER-24X45-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "2 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "34",
+    "name": "Plotter - Rollo de papel Caja 4 unid.",
+    "description": "",
+    "extendDescription": "Los rollos de papel bond para plotters son especiales para impresión de planos de arquitectura, diseño, ingeniería, industrial textil , etc.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "24",
+    "clase": "CONTOMETROS",
+    "grupoId": "2402",
+    "grupo": "PLOTTERS",
+    "medida": "36\" x 45 mt",
+    "gramaje": "90GR",
+    "material": "BOND",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/32-PLOTTER-EN-CAJA-ROLLO-PAPEL-BOND-PLOTTER-36X45-90GR_500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/32-PLOTTER-EN-CAJA-ROLLO-PAPEL-BOND-PLOTTER-36X45-90GR_800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "4 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "35",
+    "name": "Sobre Porta Mascarilla C/ Impresión",
+    "description": "",
+    "extendDescription": "Estos estuches para mascarilla se caracterizan por estética kraft, cuyo papel no ha sido tintado durante su proceso de fabricación, de ahí su color marrón, se indica que este artículo es 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "14 x 15,5 cm",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/SOBRES-PORTA-MASCARILLA-CON-ETIQUETA-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/SOBRES-PORTA-MASCARILLA-CON-ETIQUETA-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "36",
+    "name": "Sobre Porta Mascarilla S/ Impresión",
+    "description": "",
+    "extendDescription": "Estos estuches para mascarilla se caracterizan por estética kraft, cuyo papel no ha sido tintado durante su proceso de fabricación, de ahí su color marrón, se indica que este artículo es 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "14 x 15,5 cm",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/SOBRES-PORTA-MASCARILLA-SIN-ETIQUETA-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/SOBRES-PORTA-MASCARILLA-SIN-ETIQUETA-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "50 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "37",
+    "name": "Sobre Porta Cubiertos C/ Impresión",
+    "description": "",
+    "extendDescription": "Estos estuches para cubiertos se caracterizan por estética kraft, cuyo papel no ha sido tintado durante su proceso de fabricación, de ahí su color marrón, se indica que este artículo es 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "8 x 25,5 cm",
+    "gramaje": "73GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/SOBRES-PORTA-CUBIERTOS-CON-ETIQUETA-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/SOBRES-PORTA-CUBIERTOS-CON-ETIQUETA-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "100 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "38",
+    "name": "Sobre Porta Cubiertos S/ Impresión",
+    "description": "",
+    "extendDescription": "Estos estuches para cubiertos se caracterizan por estética kraft, cuyo papel no ha sido tintado durante su proceso de fabricación, de ahí su color marrón, se indica que este artículo es 100% ecológico.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "20",
+    "clase": "SOBRES",
+    "grupoId": "2005",
+    "grupo": "SOBRES KRAFT",
+    "medida": "8 x 25,5 cm",
+    "gramaje": "73GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/SOBRES-PORTA-CUBIERTOS-SIN-ETIQUETA-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/SOBRES-PORTA-CUBIERTOS-SIN-ETIQUETA-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "100 unid.",
+        "productsPerBox": ""
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "39",
+    "name": "Contómetros",
+    "description": "",
+    "extendDescription": "Fabricado en papel térmico, los contómetros son especiales para cajas registradoras de cualquier marca, cajeros automáticos, etc.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "24",
+    "clase": "CONTOMETROS",
+    "grupoId": "2401",
+    "grupo": "CONTOMETROS",
+    "medida": "80 x 80 x 13",
+    "gramaje": "55GR",
+    "material": "PAPEL TERMICO",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/CONTOMETROS-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/CONTOMETROS-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "5 unid.",
+        "productsPerBox": "20 unid."
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "40",
+    "name": "Individuales",
+    "description": "",
+    "extendDescription": "Nuestros individuales están elaborados en papel reciclado o ecológico de caña, libre de árboles, para así comunicar además un mensaje de cuidado al planeta, los fabricamos a la medida.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "25",
+    "clase": "INDIVIDUALES",
+    "grupoId": "2501",
+    "grupo": "INDIVIDUALES",
+    "medida": "40 x 30 cm",
+    "gramaje": "75GR",
+    "material": "KRAFT",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/INDIVIDUALES-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/INDIVIDUALES-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "100 unid.",
+        "productsPerBox": "20 unid."
+      }
+    ],
+    "productColors": [],
+    "isNew": true,
+    "statusId": 1
+  },
+  {
+    "id": "41",
+    "name": "Folder Neón Rosado",
+    "description": "",
+    "extendDescription": "Realza tus presentaciones, Los folders Neon hacen la diferencia en tus presentaciones, nuestros folders contiene: Medidas exactas, Gramaje uniforme, Color uniforme, Doble perforación (lateral y superior), No es tóxico y tenemos colores surtidos.",
+    "superGrupoId": "051",
+    "superGrupo": "LINEA",
+    "claseId": "21",
+    "clase": "FOLDERS",
+    "grupoId": "2103",
+    "grupo": "FOLDERS HOT COLORS",
+    "medida": "A4",
+    "gramaje": "",
+    "material": "",
+    "impresion": "",
+    "observacion": "",
+    "defaultImagePath": "/assets/img/products/FOLDERS-NEON-ROSADO-500X450.png",
+    "imagesPaths": [
+      "/assets/img/products/FOLDERS-NEON-ROSADO-800X800.png"
+    ],
+    "productPackaging": [
+      {
+        "productsPerPackage": "20 unid. Por color",
+        "productsPerBox": "1/2 millar"
+      }
+    ],
+    "productColors": [],
+    "isNew": false,
+    "statusId": 1
+  }
+]

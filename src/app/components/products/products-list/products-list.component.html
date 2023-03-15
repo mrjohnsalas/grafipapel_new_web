@@ -1,0 +1,156 @@
+<!-- Breadcrumbs -->
+<section class="g-bg-gray-light-v5 g-py-80">
+    <div class="container text-center">
+      <h2 class="h2 g-color-black g-font-weight-600">Nuestros productos</h2>
+  
+      <ul class="u-list-inline">
+        <li class="list-inline-item g-mr-5">
+          <a class="u-link-v5 g-color-gray-dark-v5 g-color-primary--hover" routerLink="/home">Inicio</a>
+          <i class="g-color-gray-light-v2 g-ml-5">/</i>
+        </li>
+        <li class="list-inline-item g-color-primary">
+          <span>Nuestros productos</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Breadcrumbs -->
+  
+  <!-- Blog Background Overlay Blocks -->
+  <div class="container g-pt-100 g-pb-20">
+    <div class="row justify-content-between">
+      <div class="col-lg-9 order-lg-2 g-mb-80">
+        <div class="g-pl-20--lg">
+          <div class="masonry-grid row g-mb-70" *ngIf="objsFiltered">
+            <!-- <div class="masonry-grid-sizer col-sm-1"></div> -->
+  
+            <div class="masonry-grid-item col-sm-4 g-mb-30" *ngFor="let product of objsFilteredPage">
+              <!-- Blog Background Overlay Blocks -->
+              <article class="u-block-hover">
+                <div class="g-bg-cover g-bg-white-gradient-opacity-v1--after">
+                  <img class="u-block-hover__main--mover-down" [src]="product.defaultImagePath" alt="Image Description">
+                </div>
+                <div class="g-pos-abs g-top-0 g-right-0 g-z-index-1 g-pa-35">
+                  <span class="d-block g-color-primary g-font-weight-600 g-font-size-12">{{ product.isNew ? 'Producto nuevo' : '' }}</span>
+                </div>
+                <div class="u-block-hover__additional--partially-slide-up g-z-index-1">
+                  <div class="u-block-hover__visible g-pa-25">
+                    <span class="d-block g-color-white-opacity-0_7 g-font-weight-600 g-font-size-12 mb-2">{{ product.grupo }}</span>
+                    <h2 class="h4 g-color-white g-font-weight-600 mb-3">
+                      <a class="u-link-v5 g-color-white g-color-primary--hover g-cursor-pointer" [routerLink]="['detail', product.id]">{{ product.name }}</a>
+                    </h2>
+                    <p class="g-color-white-opacity-0_7 mb-0">{{ product.description }}</p>
+                    <h4 class="d-inline-block g-color-white-opacity-0_7 g-font-size-11 mb-0">{{ product.medida }}</h4>
+                    <span class="g-color-white-opacity-0_7 g-pos-rel g-top-2 mx-2">&#183;</span>
+                    <span class="g-color-white-opacity-0_7 g-font-size-10 text-uppercase">{{ product.material }}</span>
+                  </div>
+  
+                  <div class="g-pl-25">
+                    <a class="d-inline-block g-brd-bottom g-brd-white g-color-white g-font-weight-600 g-font-size-12 text-uppercase g-text-underline--none--hover g-mb-30" [routerLink]="['detail', product.id]">Lee mas</a>
+                  </div>
+                </div>
+              </article>
+              <!-- End Blog Background Overlay Blocks -->
+            </div>
+          </div>
+  
+          <!-- Pagination -->
+          <nav id="stickyblock-end" class="text-center" aria-label="Page Navigation">
+            <ul class="list-inline">
+              <li class="list-inline-item float-left g-hidden-xs-down">
+                <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" [routerLink]="" aria-label="Previous" (click)="previousPage()">
+                  <span aria-hidden="true">
+                    <i class="fa fa-angle-left g-mr-5"></i> Anterior
+                  </span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+              </li>
+  
+              <li class="list-inline-item" *ngFor="let page of pages">
+                <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" [ngClass]="{'u-pagination-v1-4--active': currentPage === page}" [routerLink]="" (click)="getPage(page)">{{ page }}</a>
+              </li>
+  
+              <li class="list-inline-item float-right g-hidden-xs-down">
+                <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" [routerLink]="" aria-label="Next" (click)="nextPage()">
+                  <span aria-hidden="true">
+                    Siguiente <i class="fa fa-angle-right g-ml-5"></i>
+                  </span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+        </div>
+      </div>
+  
+      <div class="col-lg-3 order-lg-1 g-brd-right--lg g-brd-gray-light-v4 g-mb-80">
+        <div class="g-pr-20--lg">
+          <!-- Links -->
+          <div class="g-mb-50">
+            <h3 class="h5 g-color-black g-font-weight-600 mb-4">Grupos de productos</h3>
+            <ul class="list-unstyled g-font-size-13 mb-0" *ngIf="productGroups">
+              <li *ngFor="let group of productGroups">
+                <a class="d-block u-link-v5 g-px-20 g-py-8" style="cursor: pointer;"
+                  [ngClass]="productGroupSelected !== group.id ? 'g-color-gray-dark-v4 rounded' : 'g-rounded-50 g-color-black g-bg-gray-light-v5 g-font-weight-600 active'"
+                  (click)="setCurrentProductGroup(group.id)" >
+                  <i class="mr-2 fa fa-angle-right"></i> {{ group.name }}</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Links -->
+  
+          <hr class="g-brd-gray-light-v4 g-mt-50 mb-0">
+  
+          <div id="stickyblock-start">
+            <div class="js-sticky-block g-sticky-block--lg g-pt-50" data-type="responsive" data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
+              <!-- Publications -->
+              <div class="g-mb-50">
+                <h3 class="h5 g-color-black g-font-weight-600 mb-4">Servicios</h3>
+                <ul class="list-unstyled g-font-size-13 mb-0">
+                  <li>
+                    <article class="media g-mb-35">
+                      <img class="d-flex g-width-40 g-height-40 rounded-circle mr-3" src="/assets/img/icons/OFFSET_ICON.png" alt="Image Description">
+                      <div class="media-body">
+                        <h4 class="h6 g-color-black g-font-weight-600">OFFSET</h4>
+                        <p class="g-color-gray-dark-v4">La imaginación llevada al diseño y hecha impresión.</p>
+                        <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" routerLink="/offset">Descubre más</a>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="media g-mb-35">
+                      <img class="d-flex g-width-40 g-height-40 rounded-circle mr-3" src="/assets/img/icons/FLEXO_ICON.png" alt="Image Description">
+                      <div class="media-body">
+                        <h4 class="h6 g-color-black g-font-weight-600">Flexografía</h4>
+                        <p class="g-color-gray-dark-v4">Somos una nueva solución para tus procesos de PACKING.</p>
+                        <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" routerLink="flexo">Descubre más</a>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Publications -->
+  
+              <hr class="g-brd-gray-light-v4 g-my-50">
+  
+              <!-- Tags -->
+              <div class="g-mb-40">
+                <h3 class="h5 g-color-black g-font-weight-600 mb-4">Catálogos</h3>
+                <ul class="u-list-inline mb-0">
+                  <li class="list-inline-item g-mb-10">
+                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15" href="/assets/files/CATALOGO_GRAFIPAPEL_2023.pdf" download>Catálogo 2023</a>                  </li>
+                </ul>
+              </div>
+              <!-- End Tags -->
+  
+              <hr class="g-brd-gray-light-v4 g-my-50">
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Blog Background Overlay Blocks -->

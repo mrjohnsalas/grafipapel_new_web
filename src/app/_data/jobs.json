@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "name": "EJECUTIVO DE VENTAS",
+      "mission": "Promover la venta de productos de la marca, retener y captar nuevos clientes.",
+      "location": "Lima, Perú",
+      "company": "Grafipapel S.A.",
+      "description": "Grafipapel S.A., empresa Industrial Gráfica, con 24 años en el mercado, se encuentra en la búsqueda de un(a): EJECUTIVO DE VENTAS.",
+      "typeOfSchedule": "Tiempo completo",
+      "requirementsText": "",
+      "requirements": [ 
+          "Profesionales egresados de las carreras de Marketing, Administración, Negocios Internacionales, Ingeniería Industrial y carreras afines.", 
+          "Experiencia comercial mínima de dos (02) años en el puesto (Industria Gráfica), empresas industriales relacionadas al papel o sectores similares." 
+        ],
+
+      "tasksText": "",
+      "tasks": [ 
+          "Generar y desarrollar cartera de clientes nuevos.", 
+          "Vender el mix de productos que la empresa ofrece (Línea – Impresos – Flexografía).",
+          "Realizar el cierre de ventas efectivo, en cumplimiento de la meta de ventas mensual.",
+          "Coordinar con las áreas correspondientes para la elaboración de la cotización, las pruebas de color, el cumplimiento de tiempos de entrega según la orden de compra de cliente, hasta la entrega de los productos y su factura.",
+          "Informar la situación del mercado y la competencia.",
+          "Coordinar la preparación de muestras comerciales.",
+          "Brindar asesoría a los clientes.",
+          "Elaborar el reporte diario de visitas."
+        ],
+
+      "responsibilitiesText": "",
+      "responsibilities": [ "item_1", "item_2" ],
+
+      "skillsText": "",
+      "skills": [ 
+          "Excel", 
+          "Marketing" 
+        ],
+
+      "necessaryKnowledgeText": "",
+      "necessaryKnowledge": [ 
+          "Excel Básico", 
+          "Estrategias de ventas" 
+        ],
+
+      "desirableKnowledgeText": "",
+      "desirableKnowledge": [ 
+          "Cursos de Marketing", 
+          "Curso de Oratoria", 
+          "Cursos relacionados a la ventas" 
+        ],
+
+      
+      "salary": 0,
+      "statusId": 1
+    }
+]

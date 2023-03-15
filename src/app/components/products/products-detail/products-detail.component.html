@@ -1,0 +1,107 @@
+<!-- Breadcrumbs -->
+<section class="g-bg-gray-light-v5 g-py-50">
+    <div class="container">
+        <div class="d-sm-flex text-center">
+            <div class="align-self-center">
+                <h2 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">{{ pageTitle }}</h2>
+            </div>
+
+            <div class="align-self-center ml-auto">
+                <ul class="u-list-inline">
+                    <li class="list-inline-item g-mr-5">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" routerLink="/home">Inicio</a>
+                        <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                    </li>
+                    <li class="list-inline-item g-mr-5">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" routerLink="/products">Productos</a>
+                        <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                    </li>
+                    <li class="list-inline-item g-color-primary">
+                        <span>{{ pageTitle }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Breadcrumbs -->
+
+<!-- Portfolio Single Item -->
+<section class="container g-pt-100 g-pb-70">
+    <div class="row g-mb-70">
+        <div class="col-lg-8 g-mb-30">
+            <!-- Carousel Images -->
+            <div class="js-carousel g-mb-30" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-40 g-height-40 g-font-size-default g-color-gray-dark-v5 g-bg-white g-color-white--hover g-bg-primary--hover rounded"
+                data-arrow-left-classes="fa fa-angle-left g-left-20" data-arrow-right-classes="fa fa-angle-right g-right-20">
+                <div *ngFor="let img of currentObj.imagesPaths">
+                    <img class="img-fluid" [src]="img" alt="Image Description">
+                </div>
+            </div>
+            <!-- End Carousel Images -->
+        </div>
+
+        <div class="col-lg-4 g-mb-30">
+            <!-- Title -->
+            <div class="mb-5">
+                <h2 class="g-color-black mb-1">{{ currentObj.name }}</h2>
+                <span class="d-block lead mb-4">{{ currentObj.grupo }}</span>
+                <p>{{ currentObj.description }}</p>
+                <p>{{ currentObj.extendDescription }}</p>
+            </div>
+            <!-- End Title -->
+
+            <hr class="g-brd-gray-light-v4">
+
+            <!-- Detalle -->
+            <div class="mb-5">
+                <h3 class="h5 g-color-black mb-3">Detalles:</h3>
+                <ul class="list-unstyled">
+                    <li class="my-3" *ngIf="currentObj.material">
+                        <p class="g-color-gray-dark-v4">Material: {{ currentObj.material }}</p>
+                    </li>
+                    <li class="my-3" *ngIf="currentObj.gramaje">
+                        <p class="g-color-gray-dark-v4">Gramaje: {{ currentObj.gramaje }}</p>
+                    </li>
+                    <li class="my-3" *ngIf="currentObj.medida">
+                        <p class="g-color-gray-dark-v4">Medida: {{ currentObj.medida }}</p>
+                    </li>
+                    <li class="my-3" *ngIf="currentObj.impresion">
+                        <p class="g-color-gray-dark-v4">Impresión: {{ currentObj.impresion }}</p>
+                    </li>
+                    <li class="my-3" *ngIf="currentObj.observacion">
+                        <p class="g-color-gray-dark-v4">Observaciones: {{ currentObj.observacion }}</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Detalle -->
+
+            <hr class="g-brd-gray-light-v4">
+
+            <!-- Empaques -->
+            <div class="mb-5" *ngIf="currentObj.productPackaging">
+                <h3 class="h5 g-color-black mb-3">Empaques:</h3>
+                <ul class="list-unstyled">
+                    <div *ngFor="let pkg of currentObj.productPackaging">
+                        <li class="my-3">
+                            <p class="g-color-gray-dark-v4">Paquete: {{ pkg.productsPerPackage }} / Caja: {{ pkg.productsPerBox }}</p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <!-- End Detalle -->
+
+            <hr class="g-brd-gray-light-v4">
+
+            <!-- Colors -->
+            <div class="mb-5" *ngIf="currentObj.productColors">
+                <h3 class="h5 g-color-black mb-3">Colores:</h3>
+                <div *ngFor="let color of currentObj.productColors">
+                    <img class="g-width-25 g-height-25 rounded-circle mr-2 mb-1" [src]="color" alt="Image Description">
+                </div>
+            </div>
+            <!-- End Colors -->
+
+        </div>
+    </div>
+</section>
+<!-- End Portfolio Single Item -->
