@@ -34,50 +34,77 @@
         </div>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-md-5">
-            <form>
-                <div class="row">
-                    <div class="col-md-6 form-group g-mb-20">
-                        <label class="g-color-gray-dark-v2 g-font-size-13">Nombres</label>
-                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tus nombres">
+    <app-spinner-overlay-wrapper [showSpinner]="isLoadingData">
+        <form (submit)="submit()" [formGroup]="formGroup" id="formGroup">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Nombres</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tus nombres" formControlName="firstName">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('firstName'))">
+                                <span *ngIf="getControl('firstName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('firstName').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('firstName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Apellidos</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tus apellidos" formControlName="lastName">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('lastName'))">
+                                <span *ngIf="getControl('lastName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('lastName').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('lastName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
                     </div>
-
-                    <div class="col-md-6 form-group g-mb-20">
-                        <label class="g-color-gray-dark-v2 g-font-size-13">Apellidos</label>
-                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tus apellidos">
+    
+                    <div class="g-mb-20">
+                        <label class="g-color-gray-dark-v2 g-font-size-13">Tu correo</label>
+                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="email" placeholder="Tu correo" formControlName="email">
+                        <span class="text-danger" *ngIf="checkControlError(getControl('email'))">
+                            <span *ngIf="getControl('email').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            <span *ngIf="getControl('email').errors?.['email']">{{ appSettingsService.RequiredValidEmailErrorMessage }}</span>
+                            <span *ngIf="getControl('email').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ emailMaxLength }}.</span>
+                        </span>
+                    </div>
+    
+                    <div class="g-mb-40">
+                        <label class="g-color-gray-dark-v2 g-font-size-13">Tu teléfono</label>
+                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="Tu teléfono" formControlName="phone">
+                        <span class="text-danger" *ngIf="checkControlError(getControl('phone'))">
+                            <span *ngIf="getControl('phone').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            <span *ngIf="getControl('phone').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ phoneMaxLength }}.</span>
+                        </span>
+                    </div>
+    
+                    <div class="media">
+                        <h3 class="d-flex g-color-black g-font-weight-600 g-font-size-default mr-4">Horario de oficina:</h3>
+                        <div class="media-body">
+                            <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">Lunes - Viernes: 08:30 AM - 06:00 PM</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="g-mb-20">
-                    <label class="g-color-gray-dark-v2 g-font-size-13">Tu correo</label>
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="email" placeholder="Tu correo">
-                </div>
-
-                <div class="g-mb-40">
-                    <label class="g-color-gray-dark-v2 g-font-size-13">Tu teléfono</label>
-                    <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="Tu teléfono">
-                </div>
-
-                <div class="media">
-                    <h3 class="d-flex g-color-black g-font-weight-600 g-font-size-default mr-4">Horario de oficina:</h3>
-                    <div class="media-body">
-                        <p class="g-color-gray-dark-v4 g-font-size-12 mb-1">Lunes - Viernes: 08:30 AM - 06:00 PM</p>
+                <div class="col-md-7">
+                    <div class="g-mb-40">
+                        <label class="g-color-gray-dark-v2 g-font-size-13">Tu mensaje</label>
+                        <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="10" placeholder="Hola, me gustaría ..." formControlName="message"></textarea>
+                        <span class="text-danger" *ngIf="checkControlError(getControl('message'))">
+                            <span *ngIf="getControl('message').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            <span *ngIf="getControl('message').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ messageMinLength }}.</span>
+                            <span *ngIf="getControl('message').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ messageMaxLength }}.</span>
+                        </span>
+                    </div>
+    
+                    <div class="text-right">
+                        <button type="submit" class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" role="button" [disabled]="formGroup.invalid" form="formGroup">Enviar</button>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="col-md-7">
-            <div class="g-mb-40">
-                <label class="g-color-gray-dark-v2 g-font-size-13">Tu mensaje</label>
-                <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="10" placeholder="Hola, me gustaría ..."></textarea>
             </div>
-
-            <div class="text-right">
-                <button class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" type="submit" role="button">Enviar</button>
-            </div>
-        </div>
-    </div>
+        </form>
+    </app-spinner-overlay-wrapper>
+    
 </section>
 <!-- End Contact Form -->
 
