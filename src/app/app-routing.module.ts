@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'jobs',
     loadChildren: () => import('@modules/jobs.module').then(module => module.JobsModule)
   },
+  {
+    path: 'blog',
+    loadChildren: () => import('@modules/blog.module').then(module => module.BlogModule)
+  },
   { path: '**', redirectTo: '' }
 ];
 
