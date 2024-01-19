@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FlexoComponent } from '@components/services/flexo/flexo.component';
 import { OffsetComponent } from '@components/services/offset/offset.component';
+import { ClaimBookComponent } from './components/claim-book/claim-book.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OffsetComponent } from '@components/services/offset/offset.component';
     ContactComponent,
     HomeComponent,
     FlexoComponent,
-    OffsetComponent
+    OffsetComponent,
+    ClaimBookComponent
   ],
   imports: [
     BrowserModule,

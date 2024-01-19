@@ -71,7 +71,7 @@ export class ContactComponent extends FormHelper implements OnInit, AfterViewIni
 
   onSaveSuccess(): void {
     this.isLoadingData = false;
-    this.appHelperService.sendSuccessFormAlert();
+    this.appHelperService.sendSuccessFormAlert(this.appSettingsService.SuccessContactFormTitle, this.appSettingsService.SuccessContactFormMessage);
     this.formGroup.reset();
   }
 

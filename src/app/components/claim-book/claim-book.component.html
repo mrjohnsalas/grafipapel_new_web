@@ -1,0 +1,363 @@
+<!-- Breadcrumbs -->
+<section class="g-bg-gray-light-v5 g-py-50">
+    <div class="container">
+        <div class="d-sm-flex text-center">
+            <div class="align-self-center">
+                <h2 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">Libro de reclamaciones</h2>
+            </div>
+
+            <div class="align-self-center ml-auto">
+                <ul class="u-list-inline">
+                    <li class="list-inline-item g-mr-5">
+                        <a class="u-link-v5 g-color-main g-color-primary--hover" routerLink="/home">Inicio</a>
+                        <i class="g-color-gray-light-v2 g-ml-5">/</i>
+                    </li>
+                    <li class="list-inline-item g-color-primary">
+                        <span>Libro de reclamaciones</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Breadcrumbs -->
+
+<!-- Contact Form -->
+<section class="container g-py-100">
+    <div class="row g-mb-20">
+        <div class="col-lg-12 g-mb-50">
+            <!-- Heading -->
+            <h2 class="h1 g-color-black g-font-weight-700 mb-4">Libro de reclamaciones</h2>
+            <p class="g-font-size-18 mb-0">Conforme a lo establecido en el código de la Protección y Defensa del consumidor este establecimiento cuenta con un Libro de Reclamaciones a tu disposición. Registra la queja o reclamo aqui.</p>
+            <!-- End Heading -->
+        </div>
+    </div>
+
+    <app-spinner-overlay-wrapper [showSpinner]="isLoadingData">
+        <form (submit)="submit()" [formGroup]="formGroup" id="formGroup">
+            <div class="row justify-content-center">
+
+                <div class="col-md-12">
+                    <h3 class="h3 g-color-black g-font-weight-700 mb-4">Datos del consumidor</h3>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Tipo de Documento</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="consumerDocumentType">
+                                <option [ngValue]="documentType" *ngFor="let documentType of documentTypes;">{{ appHelperService.getDocumentTypeName(documentType) }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerDocumentType'))">
+                                <span *ngIf="getControl('consumerDocumentType').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Nro. de Documento</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Nro. de Documento" formControlName="consumerDocumentId">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerDocumentId'))">
+                                <span *ngIf="getControl('consumerDocumentId').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('consumerDocumentId').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ nroDocumentMaxLength }}.</span>
+                                <span *ngIf="getControl('consumerDocumentId').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ nroDocumentMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-12 form-group g-mb-20" *ngIf="documentTypeSelectedValue == DocumentType.Ruc">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Razón social</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tu razón social" formControlName="costumerRazonSocial">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('costumerRazonSocial'))">
+                                <span *ngIf="getControl('costumerRazonSocial').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('costumerRazonSocial').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('costumerRazonSocial').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ razonSocialMaxLength }}.</span>
+                            </span>
+                        </div>
+
+                        <div class="col-md-6 form-group g-mb-20" *ngIf="documentTypeSelectedValue != DocumentType.Ruc">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Nombres</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tus nombres" formControlName="consumerFirstName">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerFirstName'))">
+                                <span *ngIf="getControl('consumerFirstName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('consumerFirstName').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('consumerFirstName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20" *ngIf="documentTypeSelectedValue != DocumentType.Ruc">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Apellidos</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tus apellidos" formControlName="consumerLastName">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerLastName'))">
+                                <span *ngIf="getControl('consumerLastName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('consumerLastName').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('consumerLastName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Teléfono</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="Tu teléfono" formControlName="consumerPhone">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerPhone'))">
+                                <span *ngIf="getControl('consumerPhone').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ phoneMaxLength }}.</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">E-mail</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="email" placeholder="Tu e-mail" formControlName="consumerEmail">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerEmail'))">
+                                <span *ngIf="getControl('consumerEmail').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('consumerEmail').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ emailMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Departamento</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="consumerStateId">
+                                <option [ngValue]="state.id" *ngFor="let state of states;">{{ state.name }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerStateId'))">
+                                <span *ngIf="getControl('consumerStateId').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Provincia</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="consumerCity">
+                                <option [ngValue]="city.id" *ngFor="let city of cities;">{{ city.name }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerCity'))">
+                                <span *ngIf="getControl('consumerCity').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Distrito</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="consumerCounty">
+                                <option [ngValue]="county.id" *ngFor="let county of counties;">{{ county.name }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerCounty'))">
+                                <span *ngIf="getControl('consumerCounty').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Dirección</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Tu dirección" formControlName="consumerAddress">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerAddress'))">
+                                <span *ngIf="getControl('consumerAddress').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('consumerAddress').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ addressMinLength }}.</span>
+                                <span *ngIf="getControl('consumerAddress').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ addressMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" *ngIf="documentTypeSelectedValue != DocumentType.Ruc">
+                    <h3 class="h3 g-color-black g-font-weight-700 mb-4">Solo completar en caso de ser menor de edad</h3>
+                </div>
+
+                <div class="col-md-12" *ngIf="documentTypeSelectedValue != DocumentType.Ruc">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Tipo de Documento del padre, madre o representante</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="parentDocumentType">
+                                <option [ngValue]="documentType" *ngFor="let documentType of parentDocumentTypes;">{{ appHelperService.getDocumentTypeName(documentType) }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('parentDocumentType'))">
+                                <span *ngIf="getControl('parentDocumentType').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Nro. de Documento del padre, madre o representante</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Nro. de Documento" formControlName="parentDocumentId">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('parentDocumentId'))">
+                                <span *ngIf="getControl('parentDocumentId').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('parentDocumentId').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ parentNroDocumentMaxLength }}.</span>
+                                <span *ngIf="getControl('parentDocumentId').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ parentNroDocumentMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" *ngIf="documentTypeSelectedValue != DocumentType.Ruc">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Nombres del padre, madre o representante</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Nombres del padre" formControlName="parentFirstName">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('parentFirstName'))">
+                                <span *ngIf="getControl('parentFirstName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('parentFirstName').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('parentFirstName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Apellidos del padre, madre o representante</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Apellidos del padre" formControlName="parentLastName">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('parentLastName'))">
+                                <span *ngIf="getControl('parentLastName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('parentLastName').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('parentLastName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12" *ngIf="documentTypeSelectedValue != DocumentType.Ruc">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Teléfono del padre, madre o representante</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="Teléfono del padre" formControlName="parentPhone">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('parentPhone'))">
+                                <span *ngIf="getControl('parentPhone').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">E-mail del padre, madre o representante</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="email" placeholder="E-mail del padre" formControlName="parentEmail">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('parentEmail'))">
+                                <span *ngIf="getControl('parentEmail').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('parentEmail').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ namesMinLength }}.</span>
+                                <span *ngIf="getControl('parentEmail').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ namesMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h3 class="h3 g-color-black g-font-weight-700 mb-4">Identificación del bien contratado</h3>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Producto / servicio</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="wellHired">
+                                <option [ngValue]="wellHired" *ngFor="let wellHired of wellHireds;">{{ appHelperService.getWellHiredName(wellHired) }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('wellHired'))">
+                                <span *ngIf="getControl('wellHired').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Monto reclamado S/</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="number" placeholder="Monto reclamado" formControlName="claimAmount">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('claimAmount'))">
+                                <span *ngIf="getControl('claimAmount').errors?.['negativeNumber']">{{ appSettingsService.NegativeValueErrorMessage }}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Descripción</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Descripción" formControlName="description">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('description'))">
+                                <span *ngIf="getControl('description').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('description').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ descriptionMinLength }}.</span>
+                                <span *ngIf="getControl('description').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ descriptionMaxLength }}.</span>
+                            </span>
+                        </div>
+    
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Orden de venta</label>
+                            <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="number" placeholder="Orden de venta" formControlName="saleOrderId">
+                            <span class="text-danger" *ngIf="checkControlError(getControl('saleOrderId'))">
+                                <span *ngIf="getControl('saleOrderId').errors?.['numberGreaterThanZero']">{{ appSettingsService.NumberGreaterThanZeroErrorMessage }}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h3 class="h3 g-color-black g-font-weight-700 mb-4">Detalle de su reclamo y pedido del consumidor</h3>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Tipo</label>
+                            <select class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" formControlName="claimType">
+                                <option [ngValue]="claimType" *ngFor="let claimType of claimTypes;">{{ appHelperService.getClaimTypeName(claimType) }}</option>
+                            </select>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('claimType'))">
+                                <span *ngIf="getControl('claimType').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                            </span>
+                        </div>
+                        <div class="col-md-6 form-group pt-2">
+                            <p class="g-font-size-14 mb-4"><b>RECLAMO:</b> Disconformidad relacionada a los productos o servicios.</p>
+                            <p class="g-font-size-14 mb-4"><b>QUEJA:</b> Disconformidad no relacionada a los productos o servicios; o, malestar o descontento respecto a la atención al público.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-12 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Reclamo</label>
+                            <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="10" placeholder="Hola, me gustaría ..." formControlName="claimDetail"></textarea>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('claimDetail'))">
+                                <span *ngIf="getControl('claimDetail').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('claimDetail').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ messageMinLength }}.</span>
+                                <span *ngIf="getControl('claimDetail').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ messageMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row form-group">
+                        <div class="col-md-12 form-group g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Pedido del consumidor</label>
+                            <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="10" placeholder="Hola, me gustaría ..." formControlName="consumerRequest"></textarea>
+                            <span class="text-danger" *ngIf="checkControlError(getControl('consumerRequest'))">
+                                <span *ngIf="getControl('consumerRequest').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                                <span *ngIf="getControl('consumerRequest').errors?.['minlength']">{{ appSettingsService.MinLengthErrorMessage }} {{ messageMinLength }}.</span>
+                                <span *ngIf="getControl('consumerRequest').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ messageMaxLength }}.</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-right mb-5">
+                    <button type="submit" class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" role="button" [disabled]="formGroup.invalid" form="formGroup">Enviar</button>
+                </div>
+
+                <div class="col-md-12">
+                    <p class="g-font-size-18 mb-4">GRAFIPAPEL S.A., con RUC 20299634443, con domicilio Carretera Central Km 19.5, Distrito de Chaclacayo, Provincia y Departamento de Lima, es el titular del banco de datos personales de Quejas y reclamos.</p>
+                    <p class="g-font-size-18 mb-4">GRAFIPAPEL S.A. declara que el tratamiento de sus datos personales en este portal tiene por finalidad gestionar de manera correcta su reclamo o queja conforme las disposiciones legales sobre la materia y llevar un registro histórico de la casuística presentada a fin de mejorar nuestros niveles de atención</p>
+                    <p class="g-font-size-18 mb-4">La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI</p>
+                    <p class="g-font-size-18 mb-4">El proveedor deberá dar respuesta al reclamo en un plazo no mayor a quince (15) días hábiles improrrogables</p>
+                    <p class="g-font-size-18 mb-4">Esta cuenta de correo es usada solo para el envío de constancias de recepción de reclamos. No es un medio de recepción de los mismos, por favor sírvase no enviar ningún mensaje a esta cuenta.</p>
+                </div>
+            </div>
+
+            <!-- <pre>formGroup.valid: {{ formGroup.valid }}</pre>
+            <pre>formGroup.errors: {{ formGroup.errors | json }}</pre>
+            <pre>formGroup.value: {{ formGroup.value | json }}</pre> -->
+        </form>
+    </app-spinner-overlay-wrapper>
+    
+</section>
+<!-- End Contact Form -->

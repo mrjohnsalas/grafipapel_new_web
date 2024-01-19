@@ -3,6 +3,10 @@ import swal from 'sweetalert';
 import { AppSettingsService } from "./app-settings.service";
 import { HttpErrorResponse } from "@angular/common/http";
 import { ServiceException } from "@models/service-exception.model";
+import { DocumentType } from '@models/document-type.enum';
+import { WellHired } from "@models/well-hired.enum";
+import { ClaimType } from "@models/claim-type.enum";
+
 
 @Injectable({
     providedIn: 'root',
@@ -23,13 +27,9 @@ import { ServiceException } from "@models/service-exception.model";
         );
     }
 
-    sendSuccessFormAlert(): Promise<any> {
-        return this.sendAlert(
-          this.appSettingsService.SuccessContactFormErrorTitle,
-          this.appSettingsService.SuccessContactFormMessage,
-          'success'
-        );
-    }
+    sendSuccessFormAlert(title: string, message: string): Promise<any> {
+      return this.sendAlert(title, message, 'success');
+  }
 
     getServiceExceptionObject(errorResponse: HttpErrorResponse): ServiceException {
         let ex: ServiceException;
@@ -53,6 +53,34 @@ import { ServiceException } from "@models/service-exception.model";
     
         // Others errors
         return errorResponse.error;
+    }
+
+    getDocumentTypeName(documentType: DocumentType | null): string {
+      return documentType == null
+        ? 'Seleccione uno'
+        :  DocumentType[documentType];
+    }
+
+    getWellHiredName(wellHired: WellHired): string {
+      switch (wellHired) {
+        case WellHired.Product:
+          return 'Producto';
+        case WellHired.Service:
+          return 'Servicio';
+        default:
+          return '';
       }
+    }
+    
+    getClaimTypeName(claimType: ClaimType): string {
+      switch (claimType) {
+        case ClaimType.Claim:
+          return 'Reclamo';
+        case ClaimType.Complaint:
+          return 'Queja';
+        default:
+          return '';
+      }
+    }
 
   }
