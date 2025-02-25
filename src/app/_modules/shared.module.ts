@@ -15,7 +15,7 @@ import { SpinnerComponent } from '@components/shared/spinner/spinner.component';
     FooterComponent,
     CustomerSliderComponent,
     SpinnerOverlayWrapperComponent,
-    SpinnerComponent
+    SpinnerComponent,
   ],
   imports: [
     CommonModule,

@@ -55,6 +55,26 @@
 
   <app-root>Loading...</app-root>
 
+  <!-- Contenido de tu página -->
+
+<div id="fraud-dialog" class="modal inmodal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content animated fadeIn">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          </div>
+          <div class="modal-body">
+              <img src="/assets/img/social/COMUNICADO-GP.jpg" alt="Imagen de bienvenida" style="max-width: 100%">
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Resto del contenido de tu página -->
+
   <!-- JS Global Compulsory -->
   <script src="/assets/vendor/jquery/jquery.min.js"></script>
   <script src="/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
@@ -342,7 +362,7 @@
     }
 
     $(document).on('ready', function () {
-
+      //$('#fraud-dialog').modal('show');
     });
 
     $(window).on('load', function () {
