@@ -5,24 +5,27 @@ import { map } from 'rxjs/operators';
 import { Job } from '@models/job';
 
 import jobsFromFile from '@data/jobs.json';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class JobService {
 
-    jobs: Job[] = jobsFromFile;
+  baseUrl = environment.webApiURL + 'jobs';
 
-    constructor() { }
+  jobs: Job[] = jobsFromFile;
+
+  constructor(private http: HttpClient) { }
   
-    getAll(): Observable<Job[]> {
-      return of(this.jobs);
-    }
+  getAll(): Observable<Job[]> {
+    return of(this.jobs);
+  }
   
-    get(id: number): Observable<Job> {
-      return of(this.jobs).pipe(
-        map(result => result.find(x => x.id === id)!)
-      );
-    }
-  
+  get(id: number): Observable<Job> {
+    return of(this.jobs).pipe(
+      map(result => result.find(x => x.id === id)!)
+    );
+  }
 }

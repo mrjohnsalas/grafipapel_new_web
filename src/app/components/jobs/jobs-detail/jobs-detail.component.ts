@@ -4,6 +4,8 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Job } from '@models/job';
 import { JobService } from '@services/job.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { JobsApplyFormComponent } from '../jobs-apply-form/jobs-apply-form.component';
 
 declare function initMap(): any;
 declare function initTabs(): any;
@@ -22,8 +24,9 @@ export class JobsDetailComponent implements OnInit, AfterViewInit {
   currentObj?: Job;
   id?: number;
   parentPath = '/jobs';
+  isLoadingData = false;
 
-  constructor(private objService: JobService, private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(private objService: JobService, private router: Router, private activatedRoute: ActivatedRoute, private modalService: NgbModal) { }
   
   ngAfterViewInit(): void {
     // document - ready
@@ -72,6 +75,29 @@ export class JobsDetailComponent implements OnInit, AfterViewInit {
 
   roundUp(value: number): number {
     return Math.ceil(value);
+  }
+
+  onApplyJob(): void {
+    const modalForm = this.modalService.open(JobsApplyFormComponent, { size: 'lg' });
+    modalForm.result.then(
+      this.onCloseModalForm.bind(this),
+      this.onCloseModalForm.bind(this)
+    );
+    modalForm.componentInstance.objName = this.currentObj?.name;
+    modalForm.componentInstance.jobId = this.currentObj?.id;
+    modalForm.componentInstance.jobTitle = this.currentObj?.name;
+  }
+
+  onCloseModalForm(response: any): void {
+    // if (response === Object(response)) {
+    //   if (response.modalMode === ModalMode.Create) {
+    //     this.objs.unshift(response.obj);
+    //   } else {
+    //     const index = this.objs.findIndex(x => x.id == response.obj.id);
+    //     this.objs[index] = response.obj;
+    //   }
+    //   this.filterData();
+    // }
   }
 
 }

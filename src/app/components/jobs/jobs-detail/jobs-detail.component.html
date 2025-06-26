@@ -128,7 +128,7 @@
                         <p>{{ currentObj.necessaryKnowledgeText }}</p>
                     </div>
 
-                      <div class="row">
+                    <div class="row">
                         <div class="col-lg">
                             <ul class="list-unstyled g-mb-12 g-mb-0--md">
                                 <div *ngFor="let necessary of currentObj.necessaryKnowledge; let i = index">
@@ -161,7 +161,7 @@
                         <p>{{ currentObj.desirableKnowledgeText }}</p>
                     </div>
 
-                      <div class="row">
+                    <div class="row">
                         <div class="col-lg">
                             <ul class="list-unstyled g-mb-12 g-mb-0--md">
                                 <div *ngFor="let desirable of currentObj.desirableKnowledge; let i = index">
@@ -228,6 +228,18 @@
                         <!-- End Skills -->
                     </div>
                     <!-- End Offer Details & Skills -->
+
+                    <hr class="g-brd-gray-light-v4">
+
+                    <div class="text-right">
+                        <button type="button" class="btn btn-white" title="Regresar" [routerLink]="['/jobs']" [disabled]="isLoadingData">
+                            <i class="fa fa-arrow-left"></i> Regresar 
+                        </button>
+                        <button type="button" class="btn btn-primary ml-3 pl-5 pr-5" title="Postular" (click)="onApplyJob()"
+                                [disabled]="isLoadingData">
+                            <i class="fa fa-floppy-o"></i> Postular
+                        </button>
+                    </div>
                 </article>
             </div>
             <!-- End Content -->

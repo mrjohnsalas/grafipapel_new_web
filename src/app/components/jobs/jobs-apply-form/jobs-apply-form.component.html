@@ -1,0 +1,112 @@
+<app-alert [text]="serviceException.message" [bgColor]="BgColor.Danger" *ngIf="serviceException"></app-alert>
+
+<app-spinner-overlay-wrapper [showSpinner]="isLoadingData">
+
+    <div class="modal-header">
+        <h3 class="modal-title">
+            {{ objName }}
+        </h3>
+        <button type="button" class="close" aria-label="Close" data-dismiss="modal" (click)="onExitModal('Close')">
+            <span>&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <form (submit)="submit()" [formGroup]="formGroup" id="formGroup">
+
+            <div class="row form-group">
+                <label class="col-sm-3 col-form-label pl-5" for="dni">DNI:</label>
+                <div class="col-sm-3" [ngClass]="{'has-error': checkControlError(getControl('dni'))}">
+                    <input class="form-control" type="text" formControlName="dni" #txtDni>
+                    <span class="text-danger" *ngIf="checkControlError(getControl('dni'))">
+                        <span *ngIf="getControl('dni').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                        <span *ngIf="getControl('dni').errors?.['minLength']">{{ appSettingsService.MinLengthErrorMessage }} {{ nameMaxLength }}.</span>
+                        <span *ngIf="getControl('dni').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ nameMaxLength }}.</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-3 col-form-label pl-5" for="firstName">Nombres:</label>
+                <div class="col-sm-9 pr-5" [ngClass]="{'has-error': checkControlError(getControl('firstName'))}">
+                    <input class="form-control" type="text" placeholder="Nombres" formControlName="firstName">
+                    <span class="text-danger" *ngIf="checkControlError(getControl('firstName'))">
+                        <span *ngIf="getControl('firstName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                        <span *ngIf="getControl('firstName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ nameMaxLength }}.</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-3 col-form-label pl-5" for="lastName">Apellidos:</label>
+                <div class="col-sm-9 pr-5" [ngClass]="{'has-error': checkControlError(getControl('lastName'))}">
+                    <input class="form-control" type="text" placeholder="Apellidos" formControlName="lastName">
+                    <span class="text-danger" *ngIf="checkControlError(getControl('lastName'))">
+                        <span *ngIf="getControl('lastName').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                        <span *ngIf="getControl('lastName').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ nameMaxLength }}.</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-3 col-form-label pl-5" for="email">Correo:</label>
+                <div class="col-sm-9 pr-5" [ngClass]="{'has-error': checkControlError(getControl('email'))}">
+                    <input class="form-control" type="email" placeholder="Correo" formControlName="email">
+                    <span class="text-danger" *ngIf="checkControlError(getControl('email'))">
+                        <span *ngIf="getControl('email').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                        <span *ngIf="getControl('email').errors?.['email']">{{ appSettingsService.RequiredValidEmailErrorMessage }}</span>
+                        <span *ngIf="getControl('email').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ emailMaxLength }}.</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-3 col-form-label pl-5" for="phone">Celular:</label>
+                <div class="col-sm-3" [ngClass]="{'has-error': checkControlError(getControl('phone'))}">
+                    <input class="form-control" type="tel" placeholder="Celular" formControlName="phone">
+                    <span class="text-danger" *ngIf="checkControlError(getControl('phone'))">
+                        <span *ngIf="getControl('phone').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}</span>
+                        <span *ngIf="getControl('phone').errors?.['maxlength']">{{ appSettingsService.MaxLengthErrorMessage }} {{ phoneMaxLength }}.</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label class="col-sm-3 col-form-label pl-5" for="cvFile">CV:</label>
+                <div class="col-sm-8" [ngClass]="{'has-error': checkControlError(getControl('cvFile'))}">
+
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="CV" formControlName="cvFileName" readonly>
+                        <span class="input-group-append">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" title="Adjuntar CV" (click)="cvFile.click()"><i class="fa fa-upload"></i></button>
+                                <input type="file" (change)="onFileChange($event)" hidden #cvFile accept=".pdf"/>
+                            </div>
+                        </span>
+                    </div>
+
+                    <span class="text-danger" *ngIf="checkControlError(getControl('cvFile')) || checkControlError(getControl('cvFile'))">
+                        <span *ngIf="getControl('cvFile').errors?.['required']">{{ appSettingsService.RequiredErrorMessage }}
+                        </span>
+                    </span>
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="modal-footer justify-content-between">
+        <div></div>
+        <div>
+            <button type="button" class="btn btn-white" data-dismiss="modal" title="Cancelar" [disabled]="isLoadingData" (click)="onExitModal('Cancel')">
+                <i class="fa fa-arrow-left"></i> Cancelar
+            </button>
+            <button type="submit" class="btn btn-primary ml-2" title="Enviar" [disabled]="formGroup.invalid" form="formGroup">
+                <i class="fa fa-floppy-o"></i> Enviar
+            </button>
+        </div>
+    </div>
+
+</app-spinner-overlay-wrapper>

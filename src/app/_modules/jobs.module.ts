@@ -9,12 +9,14 @@ import { JobsRoutingModule } from '@modules/jobs-routing.module';
 import { JobsComponent } from '@components/jobs/jobs.component';
 import { JobsListComponent } from '@components/jobs/jobs-list/jobs-list.component';
 import { JobsDetailComponent } from '@components/jobs/jobs-detail/jobs-detail.component';
+import { JobsApplyFormComponent } from '@components/jobs/jobs-apply-form/jobs-apply-form.component';
 
 @NgModule({
   declarations: [
     JobsComponent,
     JobsListComponent,
-    JobsDetailComponent
+    JobsDetailComponent,
+    JobsApplyFormComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +24,7 @@ import { JobsDetailComponent } from '@components/jobs/jobs-detail/jobs-detail.co
     ReactiveFormsModule,
     JobsRoutingModule,
     SharedModule
-  ]
+  ],
+  entryComponents: [JobsApplyFormComponent]
 })
 export class JobsModule { }

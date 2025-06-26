@@ -29,7 +29,11 @@ export class ContactComponent extends FormHelper implements OnInit, AfterViewIni
   messageMaxLength = 500;
   messageMinLength = 10;
 
-  constructor(private formBuilder: FormBuilder, public appSettingsService: AppSettingsService, private objService: ContactMessageService, private appHelperService: AppHelperService) {
+  constructor(
+    private formBuilder: FormBuilder, 
+    public appSettingsService: AppSettingsService, 
+    private objService: ContactMessageService, 
+    private appHelperService: AppHelperService) {
     super();
     this.formGroup = this.formBuilder.group({
       firstName: ['', [Validators.required, Validators.minLength(this.namesMinLength), Validators.maxLength(this.namesMaxLength)]],

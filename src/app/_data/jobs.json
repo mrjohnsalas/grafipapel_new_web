@@ -1,50 +1,192 @@
 [
     {
-      "id": 1,
-      "name": "EJECUTIVO DE VENTAS",
-      "mission": "Promover la venta de productos de la marca, retener y captar nuevos clientes.",
-      "location": "Lima, Perú",
+      "id": 5,
+      "name": "IMPRESOR FLEXOGRÁFICO",
+      "mission": "",
+      "location": "Chaclacayo, Perú",
       "company": "Grafipapel S.A.",
-      "description": "Grafipapel S.A., empresa Industrial Gráfica, con 24 años en el mercado, se encuentra en la búsqueda de un(a): EJECUTIVO DE VENTAS.",
+      "description": "Somos una empresa Industrial Nacional, dedicada a los servicios relacionados con la impresión con más de 29 años en el mercado. Actualmente nos encontramos en la búsqueda de un (a) Impresor flexográfico.",
       "typeOfSchedule": "Tiempo completo",
       "requirementsText": "",
       "requirements": [ 
-          "Profesionales egresados de las carreras de Marketing, Administración, Negocios Internacionales, Ingeniería Industrial y carreras afines.", 
-          "Experiencia comercial mínima de dos (02) años en el puesto (Industria Gráfica), empresas industriales relacionadas al papel o sectores similares." 
+          "Estudio técnico / egresado en Producción gráfica o carreras afines.", 
+          "Experiencia mínima (01) año en el puesto o puestos similares.", 
+          "Disponibilidad para trabajar de Lunes a Sábado en horario rotativos, en el distrito de Chaclacayo."
         ],
 
       "tasksText": "",
       "tasks": [ 
-          "Generar y desarrollar cartera de clientes nuevos.", 
-          "Vender el mix de productos que la empresa ofrece (Línea – Impresos – Flexografía).",
-          "Realizar el cierre de ventas efectivo, en cumplimiento de la meta de ventas mensual.",
-          "Coordinar con las áreas correspondientes para la elaboración de la cotización, las pruebas de color, el cumplimiento de tiempos de entrega según la orden de compra de cliente, hasta la entrega de los productos y su factura.",
-          "Informar la situación del mercado y la competencia.",
-          "Coordinar la preparación de muestras comerciales.",
-          "Brindar asesoría a los clientes.",
-          "Elaborar el reporte diario de visitas."
+          "Realizar la limpieza de la máquina y zona de trabajo para evitar merma.", 
+          "Revisar las medidas del papel, colores del diseño, troquel, corte especial, rodillos Anilox, lámparas UV para iniciar el tiraje de producción.",
+          "Coordinar la aprobación de la muestra del producto a imprimir con el jefe de control de calidad.",
+          "Realizar la impresión en el sustrato.",
+          "Cumplir con otras funciones que le asigne su jefe inmediato."
         ],
 
       "responsibilitiesText": "",
       "responsibilities": [ "item_1", "item_2" ],
 
       "skillsText": "",
-      "skills": [ 
-          "Excel", 
-          "Marketing" 
-        ],
+      "skills": [ ],
 
       "necessaryKnowledgeText": "",
       "necessaryKnowledge": [ 
-          "Excel Básico", 
-          "Estrategias de ventas" 
+          "Herramientas de Flexografía.", 
+          "Teoría de color tintas, anclaje, matizados y viscosidad.", 
+          "Manejo de máquina flexográfica Lineal."
         ],
 
       "desirableKnowledgeText": "",
       "desirableKnowledge": [ 
-          "Cursos de Marketing", 
-          "Curso de Oratoria", 
-          "Cursos relacionados a la ventas" 
+          "Conocimiento de tipos de accesorios y herramientas para la maquina flexográfica.", 
+          "Identificación de sistemas de impresión.", 
+          "Insumos y materiales flexográficos." 
+        ],
+
+      
+      "salary": 0,
+      "statusId": 1
+    },
+    {
+      "id": 6,
+      "name": "MAQUINISTA NUMERADOR",
+      "mission": "",
+      "location": "Chaclacayo, Perú",
+      "company": "Grafipapel S.A.",
+      "description": "Somos una empresa Industrial Nacional, dedicada a los servicios relacionados con la impresión con más de 29 años en el mercado. Actualmente nos encontramos en la búsqueda de un (a) Maquinista numerador.",
+      "typeOfSchedule": "Tiempo completo",
+      "requirementsText": "",
+      "requirements": [ 
+          "Secundaria completa, estudio técnico / egresado en Prensa Offset, Producción gráfica o carreras afines.", 
+          "Un (01) año de experiencia en el puesto o puestos similares.", 
+          "Conocimiento en mantenimiento de máquina numeradora, troqueladora, colectora (deseable).",
+          "Conocimiento de troqueles y sentido del papel (deseable).",
+          "Disponibilidad para trabajar en Chaclacayo.",
+          "Disponibilidad para trabajar de lunes a sábado en horarios rotativos."
+        ],
+
+      "tasksText": "",
+      "tasks": [ 
+          "Verificar y programar el regulado de medidas, revisión de rodillo y color de tinta para realizar la producción diaria según parte de producción.", 
+          "Realizar la numeración y colectado de comprobantes en formato continuo, papel autocopiativo o bond.",
+          "Realizar mantenimiento operativo de la máquina para asegurar el funcionamiento de la máquina.",
+          "Cumplir con otras funciones que le asigne su jefe inmediato."
+        ],
+
+      "responsibilitiesText": "",
+      "responsibilities": [ "item_1", "item_2" ],
+
+      "skillsText": "",
+      "skills": [ ],
+
+      "necessaryKnowledgeText": "",
+      "necessaryKnowledge": [ 
+          "Conocimiento en máquina numeradora."
+        ],
+
+      "desirableKnowledgeText": "",
+      "desirableKnowledge": [ 
+          "Numeración de rodillo (deseable)."
+        ],
+
+      
+      "salary": 0,
+      "statusId": 1
+    },
+    {
+      "id": 7,
+      "name": "MAQUINISTA TROQUELADOR",
+      "mission": "",
+      "location": "Chaclacayo, Perú",
+      "company": "Grafipapel S.A.",
+      "description": "Somos una empresa Industrial Nacional, dedicada a los servicios relacionados con la impresión con más de 29 años en el mercado. Actualmente nos encontramos en la búsqueda de un (a) Maquinista troquelador.",
+      "typeOfSchedule": "Tiempo completo",
+      "requirementsText": "",
+      "requirements": [ 
+          "Secundaria completa, estudio técnico / egresado en Prensa Offset, Producción gráfica o carreras afines.", 
+          "Un (01) año de experiencia en el puesto o puestos similares.",
+          "Conocimiento en mantenimiento de máquina troqueladora (deseable).",
+          "Conocimiento de troqueles y sentido del papel (deseable).",
+          "Disponibilidad para trabajar en Chaclacayo.",
+          "Disponibilidad para trabajar de lunes a sábado en horarios rotativos." 
+        ],
+
+      "tasksText": "",
+      "tasks": [ 
+          "Asegurar la limpieza de la zona de trabajo y engrase de máquina (porrillo).", 
+          "Revisar el parte de producción para determinar si la producción es continuo o nuevo.",
+          "Revisar el tipo o gramaje de papel según parte de producción para iniciar la producción de troquelado.",
+          "Dar cumplimiento de la meta de producción asignada.",
+          "Cumplir con otras funciones que le asigne su jefe inmediato."
+        ],
+
+      "responsibilitiesText": "",
+      "responsibilities": [ "item_1", "item_2" ],
+
+      "skillsText": "",
+      "skills": [ ],
+
+      "necessaryKnowledgeText": "",
+      "necessaryKnowledge": [ 
+          "Conocimiento de Troqueles"
+        ],
+
+      "desirableKnowledgeText": "",
+      "desirableKnowledge": [ 
+          "Engrase a la máquina troqueladora.", 
+          "Sentido del papel"
+        ],
+
+      
+      "salary": 0,
+      "statusId": 1
+    },
+    {
+      "id": 8,
+      "name": "INSPECTOR DE CONTROL DE CALIDAD",
+      "mission": "",
+      "location": "Chaclacayo, Perú",
+      "company": "Grafipapel S.A.",
+      "description": "Somos una empresa Industrial Nacional, dedicada a los servicios relacionados con la impresión con más de 29 años en el mercado. Actualmente nos encontramos en la búsqueda de un(a) Inspector de Control de Calidad.",
+      "typeOfSchedule": "Tiempo completo",
+      "requirementsText": "",
+      "requirements": [ 
+          "Técnico egresado en Control de calidad, Administración Industrial, producción o carreras a fines.", 
+          "Disponibilidad para trabajar en Chaclacayo en turno rotativo.",
+          "Experiencia en el rubro imprenta o papelero."
+        ],
+
+      "tasksText": "",
+      "tasks": [ 
+          "Verificar los registros y documentos requeridos correspondan al programa de producción.", 
+          "Validar el arranque de productos impresos revisando color, arte, etc.",
+          "Inspeccionar el producto terminado o material intermedio durante el proceso productivo a fin de cumplir con las especificaciones.",
+          "Realizar pruebas del producto y material de acuerdo a los métodos de ensayo.",
+          "Realizar inspecciones del producto terminado para su liberación en almacén principal.",
+          "Controlar la calidad de los insumos que ingresan al almacén (insumos, materia prima).",
+          "Realizar control de material y producto no conforme, identificando, segregación y seguimiento.",
+          "Verificar que los equipos de medición del laboratorio estén operativos.",
+          "Registrar y archivar los registro de evaluaciones de control de la calidad de todas las actividades realizadas.",
+          "Brindar soporte a la elaboración de COAs para el despacho de bobinas de papel y producto terminado para despacho a clientes, según requerimiento.",
+          "Brindar soporte a las investigaciones de no conformidades y reclamos de clientes.",
+          "Otras funciones que asigne su jefe inmediato."
+        ],
+
+      "responsibilitiesText": "",
+      "responsibilities": [ "item_1", "item_2" ],
+
+      "skillsText": "",
+      "skills": [ ],
+
+      "necessaryKnowledgeText": "",
+      "necessaryKnowledge": [ 
+          "Manejo MS Office nivel Intermedio."
+        ],
+
+      "desirableKnowledgeText": "",
+      "desirableKnowledge": [ 
+          "Conocimiento de ISO 9001:2015.", 
+          "Conocimiento de BPMs e Inocuidad"
         ],
 
       

@@ -12,10 +12,12 @@ import { SharedModule } from '@modules/shared.module';
 
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './components/contact/contact.component';
 import { FlexoComponent } from '@components/services/flexo/flexo.component';
 import { OffsetComponent } from '@components/services/offset/offset.component';
 import { ClaimBookComponent } from './components/claim-book/claim-book.component';
+import { AlertComponent } from './components/shared/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { ClaimBookComponent } from './components/claim-book/claim-book.component
     HomeComponent,
     FlexoComponent,
     OffsetComponent,
-    ClaimBookComponent
+    ClaimBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { ClaimBookComponent } from './components/claim-book/claim-book.component
     CommonModule,
     AppRoutingModule,
     RouterModule,
+    NgbModule,
     SharedModule
   ],
   providers: [

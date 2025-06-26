@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   // webApiURL: 'https://localhost:7187/api/',
-  webApiURL: 'https://devapi.grafipapel.com.pe/api/',
-  // webApiURL: 'https://webapi.grafipapel.com.pe/api/',
+  // webApiURL: 'https://devapi.grafipapel.com.pe/api/',
+  webApiURL: 'https://webapi.grafipapel.com.pe/api/',
 };
 
 /*

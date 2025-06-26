@@ -1,0 +1,4 @@
+<div class="alert alert-{{ bgColor }}" [ngClass]="{'alert-dismissable': isDismissable}">
+    <button data-dismiss="alert" class="close" type="button" *ngIf="isDismissable">×</button>
+    <i class='{{ classNameForIcon }}' *ngIf="classNameForIcon.length > 0"></i> {{ text }}
+</div>

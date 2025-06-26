@@ -23,6 +23,9 @@ export class JobsListComponent implements OnInit, AfterViewInit {
   homePath = '/home';
   jobsLines = 0;
 
+  jobColumns = 3; // Number of columns to display jobs in the grid
+  
+
   constructor(private objService: JobService, private router: Router) { }
   
   ngAfterViewInit(): void {

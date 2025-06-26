@@ -8,6 +8,7 @@ import { FooterComponent } from '@components/shared/footer/footer.component';
 import { CustomerSliderComponent } from '@components/shared/customer-slider/customer-slider.component';
 import { SpinnerOverlayWrapperComponent } from '@components/shared/spinner-overlay-wrapper/spinner-overlay-wrapper.component';
 import { SpinnerComponent } from '@components/shared/spinner/spinner.component';
+import { AlertComponent } from '@components/shared/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SpinnerComponent } from '@components/shared/spinner/spinner.component';
     CustomerSliderComponent,
     SpinnerOverlayWrapperComponent,
     SpinnerComponent,
+    AlertComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { SpinnerComponent } from '@components/shared/spinner/spinner.component';
     FooterComponent,
     CustomerSliderComponent,
     SpinnerOverlayWrapperComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AlertComponent,
   ]
 })
 export class SharedModule { }
